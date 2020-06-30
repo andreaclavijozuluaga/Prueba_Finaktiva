@@ -11,13 +11,14 @@ class ListNum extends Component {
         <ul>
           {this.props.numeros.map((numero) => {
             return(
-              <li key={numero}>
+              <li className="py-1" key={numero}>
                 {numero} x {numero} = {numero * numero}
               </li>
             )
           })}
         </ul>
-        <p>Total: {this.suma()}</p>
+        <hr/>
+        <p className="text-teal-800 text-xl py-2">Total: {this.suma()}</p>
       </div>
      );
   }
